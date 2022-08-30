@@ -21,11 +21,11 @@ import { MoviesService } from './services/services';
 export class HeroComponent {
   public data = '';
   public imgeUrl =
-    'https://github.com/danduh/city-js-metaprogramming/raw/cdecd879b9c130f61ee8c10f784cb3c5ef5557fe/logo.png';
-  public title = 'CityJS 2022';
+    'https://2022.ng-conf.org/wp-content/uploads/2022/04/Grey-Logo.png';
+  public title = 'Ng-Conf 2022';
   public subTitle = 'MetaProgramming in TypeScript from 0 to 100';
 
   constructor(service: MoviesService) {
-    this.data = service.getMovies()
+    this.data = service.getMovies();
   }
 }
