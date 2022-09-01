@@ -12,14 +12,12 @@ export interface ComponentConfig {
 
 export const Component = (conf: ComponentConfig) => {
   return async function (clazz) {
-    console.log(conf.provide);
     let tokens = Reflect.getMetadata('design:paramtypes', clazz) || [];
-    console.log('tokens', tokens);
 
     let injections = tokens.map((token) => Injector.resolve<any>(token));
+    let _cl = new clazz(...injections);
 
     const elem = document.createElement(conf.selector);
-    let _cl = new clazz(...injections);
     let tmpl = conf.template;
     Object.keys(_cl).forEach((baseClPr) => {
       tmpl = tmpl.replace(`{{${baseClPr}}}`, _cl[baseClPr]);
