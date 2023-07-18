@@ -21,8 +21,8 @@ import { MoviesService } from './services/services';
 export class HeroComponent {
   public data = '';
   public imgeUrl =
-    'https://www.angulartinyconf.com/assets/img/tinyco-red-round-big.png';
-  public title = 'Angular Tiny Conf Peretor';
+    'https://i0.wp.com/www.itvoice.in/wp-content/uploads/2023/06/images-7-1.jpeg';
+  public title = 'UI Guild IL';
   public subTitle = 'MetaProgramming in TypeScript from 0 to 100';
 
   constructor(service: MoviesService) {
