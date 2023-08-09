@@ -8,7 +8,7 @@ import { MoviesService } from './services/services';
     <h1>
         Welcome to {{title}}!
     </h1>
-    <img alt="CityJS Logo" src="{{imgeUrl}}" width="250">
+    <img alt="LiveStio Logo" src="{{imgeUrl}}" width="250">
     <h2>{{subTitle}}</h2>
     <h3><a target="_blank" href="https://angular.io/tutorial">@danduh81</a></h3>
     <p>{{data}}</p>
@@ -21,8 +21,8 @@ import { MoviesService } from './services/services';
 export class HeroComponent {
   public data = '';
   public imgeUrl =
-    'https://i0.wp.com/www.itvoice.in/wp-content/uploads/2023/06/images-7-1.jpeg';
-  public title = 'UI Guild IL';
+    'https://vslive.com/~/media/ECG/VSLive/landingpage/promoslider_vslicon.svg';
+  public title = 'Visual Studio Live';
   public subTitle = 'MetaProgramming in TypeScript from 0 to 100';
 
   constructor(service: MoviesService) {
